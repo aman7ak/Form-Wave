@@ -1,0 +1,96 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  height: 100%;
+  width: 100%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+  height: 100vh;
+  width: 100%;
+  background-color: seagreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  padding: 1.5rem 2rem;
+  /* height: 50vh; */
+  width: 28vw;
+  background-color: rgba(104, 193, 163, 0.631);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5px;
+  gap: 50px;
+}
+form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.input{
+  position: relative;
+  border-bottom: 2px solid white;
+  /* padding: 10px 0; */
+  font-size: 18px;
+}
+label{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  letter-spacing: -3px;
+}
+label span{
+  position: relative;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes downmove {
+  from{
+    top: -30px;
+  }
+  to{
+    top: 0px;
+  }
+}
+@keyframes upmove {
+  from{
+    top: 0px;
+  }
+  to{
+    top: -30px;
+  }
+}
+input{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  font-size: 18px;
+}
+button{
+  font-size: 18px;
+  padding: 15px 0;
+  border-radius: 5px;
+  border: none;
+  outline : none;
+  cursor: pointer;
+}
+p{
+  align-self: self-start;
+}
+p a{
+  text-decoration: none;
+  color: blue;
+  font-weight: 700;
+}
